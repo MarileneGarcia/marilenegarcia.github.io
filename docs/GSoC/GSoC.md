@@ -61,6 +61,9 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - My repository of the user-space MAX14001PMB reader program: [https://github.com/MarileneGarcia/max14001pmb_reader](https://github.com/MarileneGarcia/max14001pmb_reader)
 - MAX14001PMB circuit formulas analysis: [https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf)
 - Kernel mailing list thread related to MAX14001: [https://lore.kernel.org/all/?q=max14001](https://lore.kernel.org/all/?q=max14001)
+- Kernel commits integrated into version 6.19-rc1:  
+[dt-bindings: iio: adc: add max14001](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v6.19-rc1&id=192e5bbf0a8d7a629e6f9fa9e2fae54c3268bb7f)  
+[iio: adc: max14001: New driver](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v6.19-rc1&id=59795109fa67d2bee7c8c2847a487d4dddb428c1)
 
 ## Future Work
 - As mentioned, merge my code with the previous implementation and improve it until it is accepted into the kernel upstream.
