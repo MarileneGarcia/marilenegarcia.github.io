@@ -49,7 +49,7 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 
 ### Upstreaming the Device Driver Kernel Code
 - I generated three patches based on the [IIO tree, testing branch](https://git.kernel.org/pub/scm/linux/kernel/git/jic23/iio.git/log/?h=testing) to submit the driver code upstream: one with the cover letter explaining the driver, one with the device tree binding documentation, and another with the driver code.
-- After sending the patches, we discovered a commit set from 2023 with the same goal of providing support for the MAX14001 device, which had not yet been accepted. It is therefore likely that my changes will be merged into the previously existing code, which already provides nice support for the device. I will continue by generating updated versions of the older commits to improve the code until it is accepted. All related discussions can be found here: [lore kernel max14001](https://lore.kernel.org/all/?q=max14001)
+- After sending the patches, we discovered a commit set from 2023 with the same goal of providing support for the MAX14001 device, which had not yet been accepted. It is therefore likely that my changes will be merged into the previously existing code. I will continue by generating updated versions of the older commits to improve the code until it is accepted. All related discussions can be found here: [lore kernel max14001](https://lore.kernel.org/all/?q=max14001)
 
 ### Demo of the user-space program on Raspberry Pi 5 reading values from my MAX14001 driver version
 - [Demo Linux Kernel Driver MAX14001](https://www.youtube.com/shorts/xqOkkvufINA)  
@@ -66,7 +66,6 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 [iio: adc: max14001: New driver](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?h=v6.19-rc1&id=59795109fa67d2bee7c8c2847a487d4dddb428c1)
 
 ## Future Work
-- As mentioned, merge my code with the previous implementation and improve it until it is accepted into the kernel upstream.
 - Submit additional patches with the features missing in the first driver version, such as support for the binary comparator, inrush current, and fault alert. I intend to continue sending patches to cover all the device’s features even after GSoC ends.
 - Review the formulas used in the user-space program to ensure their accuracy.
 - Acquire a DC source to test higher voltage and current inputs.
